@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="../src/output.css" rel="stylesheet" />
+    <script src="../nav.js"></script>
+    <title>Transforms</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="text-center text-4xl my-3 font-bold text-purple-800">
+        Transforms
+      </h1>
+
+      <h2>Scale</h2>
+      <section class="flex flex-wrap gap-10">
+        <!-- Original scale -->
+        <img class="size-36" src="./img/menyhart_media_logo.png" />
+        <!-- TODO: Add scale-75-100-125 -->
+        <img class="scale-75 size-36" src="./img/menyhart_media_logo.png" />
+        <img class="scale-100 size-36" src="./img/menyhart_media_logo.png" />
+        <img class="scale-125 size-36" src="./img/menyhart_media_logo.png" />
+        <!-- TODO: Ad negative scale "-scale-50 rotate-180" -->
+        <img
+          class="-scale-50 rotate-180 size-36"
+          src="./img/menyhart_media_logo.png"
+        />
+        <!-- TODO: Remove scale " md:transform-none" -->
+        <img
+          class="scale-125 hover:transform-none size-36"
+          src="./img/menyhart_media_logo.png"
+        />
+      </section>
+
+      <h2>Rotate</h2>
+      <section class="flex flex-wrap gap-10">
+        <!-- Original rotate -->
+
+        <img class="rotate-0 size-36" src="./img/menyhart_media_logo.png" />
+        <img class="rotate-45 size-36" src="./img/menyhart_media_logo.png" />
+        <img class="-rotate-45 size-36" src="./img/menyhart_media_logo.png" />
+        <img class="rotate-90 size-36" src="./img/menyhart_media_logo.png" />
+        <img class="rotate-180 size-36" src="./img/menyhart_media_logo.png" />
+      </section>
+
+      <h2>Translate</h2>
+      <section class="flex flex-wrap gap-10">
+        <!--TODO: Add Original translate -->
+        <img
+          class="translate-x-0 size-36"
+          src="./img/menyhart_media_logo.png"
+        />
+        <img
+          class="translate-x-10 size-36"
+          src="./img/menyhart_media_logo.png"
+        />
+        <img
+          class="translate-x-20 size-36"
+          src="./img/menyhart_media_logo.png"
+        />
+        <img
+          class="translate-x-30 size-36"
+          src="./img/menyhart_media_logo.png"
+        />
+        <img
+          class="translate-x-40 size-36"
+          src="./img/menyhart_media_logo.png"
+        />
+      </section>
+      <h2>Skew</h2>
+      <section class="flex flex-wrap gap-10">
+        <!--TODO: Add  Original skew -->
+        <img class="skew-y-0 size-36" src="./img/menyhart_media_logo.png" />
+        <img class="skew-y-3 size-36" src="./img/menyhart_media_logo.png" />
+        <img class="skew-y-6 size-36" src="./img/menyhart_media_logo.png" />
+        <img class="skew-y-12 size-36" src="./img/menyhart_media_logo.png" />
+        <img class="-skew-y-6 size-36" src="./img/menyhart_media_logo.png" />
+      </section>
+      <h2>Transform Origin</h2>
+      <section class="flex flex-wrap gap-10">
+        <!--TODO: Add Original transform origin -->
+        <img
+          class="rotate-45 origin-center size-36"
+          src="./img/menyhart_media_logo.png"
+        />
+        <div class="size-36">
+          <img
+            class="rotate-12 origin-top-left size-36"
+            src="./img/menyhart_media_logo.png"
+          />
+          <span class="bg-amber-300 size-36"></span>
+        </div>
+        <img
+          class="transform origin-bottom size-36"
+          src="./img/menyhart_media_logo.png"
+        />
+        <img
+          class="transform origin-left size-36"
+          src="./img/menyhart_media_logo.png"
+        />
+        <img
+          class="transform origin-right size-36"
+          src="./img/menyhart_media_logo.png"
+        />
+      </section>
+    </main>
+  </body>
+</html>
