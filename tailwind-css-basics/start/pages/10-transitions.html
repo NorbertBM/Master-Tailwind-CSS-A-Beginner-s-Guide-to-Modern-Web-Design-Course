@@ -15,14 +15,15 @@
       </h1>
       <p>Utilities for applying transitions to an element.</p>
       <div class="flex flex-wrap justify-center gap-3">
+        <!-- TODO: Add "transition" -->
         <button
-          class="transition bg-purple-500 hover:bg-purple-100 text-white font-bold py-2 px-4 rounded"
+          class="... bg-purple-500 hover:bg-purple-100 text-white font-bold py-2 px-4 rounded"
         >
           Hover me
         </button>
         <!-- TODO: Add duration-200...3000 -->
         <button
-          class="transition bg-purple-500 hover:bg-purple-100 text-white font-bold py-2 px-4 rounded duration-200"
+          class="transition bg-purple-500 hover:bg-purple-100 text-white font-bold py-2 px-4 rounded ..."
         >
           Hover me
         </button>
@@ -41,84 +42,62 @@
         - `px-4`: Adds 1rem (16px) of padding on the left and right.
         - `rounded`: Applies rounded corners to the button.
         -->
+        <!-- TODO: Add "transition delay-150 duration-300 ease-in-out" -->
         <button
-          class="bg-blue-500 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-white py-2 px-4 rounded"
+          class="bg-blue-500 ... ... ... ... hover:-translate-y-1 hover:scale-110 hover:text-white py-2 px-4 rounded"
         >
           Save Changes
         </button>
-        <label class="peer ...">
-          <input type="checkbox" checked />
-        </label>
+
+        <!-- TODO: Add "transition duration-400 ease-in" -->
         <button
-          class="hidden transition-all not-peer-has-checked:opacity-0 peer-has-checked:block ..."
-        >
-          I hide
-        </button>
-        <label class="peer ...">
-          <input type="checkbox" checked />
-        </label>
-        <button
-          class="hidden transition-all transition-discrete not-peer-has-checked:opacity-0 peer-has-checked:block ..."
-        >
-          I fade out
-        </button>
-        <button
-          class="transition duration-400 ease-in bg-purple-500 hover:bg-amber-400 text-white font-bold py-2 px-4 rounded"
+          class="... ... ... bg-purple-500 hover:bg-amber-400 text-white font-bold py-2 px-4 rounded"
         >
           ease-in
         </button>
+        <!-- TODO: Add "transition duration-400 ease-out" -->
         <button
-          class="transition duration-400 ease-out bg-purple-500 hover:bg-amber-400 text-white font-bold py-2 px-4 rounded"
+          class="... ... ... bg-purple-500 hover:bg-amber-400 text-white font-bold py-2 px-4 rounded"
         >
           ease-out
         </button>
+        <!-- TODO: Add "transition duration-700 ease-in-out" -->
         <button
-          class="transition duration-700 ease-in-out bg-purple-500 hover:bg-amber-400 text-white font-bold py-2 px-4 rounded"
+          class="... ... ... bg-purple-500 hover:bg-amber-400 text-white font-bold py-2 px-4 rounded"
         >
           ease-in-out
         </button>
+        <!-- TODO: Add "transition delay-150 duration-300 ease-in-out" -->
         <button
-          class="transition delay-150 duration-300 ease-in-out bg-purple-500 hover:bg-amber-400 text-white font-bold py-2 px-4 rounded"
+          class="... ... ... ... bg-purple-500 hover:bg-amber-400 text-white font-bold py-2 px-4 rounded"
         >
           Delay me
         </button>
       </div>
+
       <h2>Animations</h2>
       <div class="flex flex-wrap justify-center gap-3">
+        <!-- TODO: Add "animate-ping, animate-pulse, animate-bounce, animate-spin" -->
         <button
-          class="animate-pulse bg-purple-500 hover:bg-purple-100 text-white font-bold py-2 px-4 rounded"
+          class="... bg-purple-500 hover:bg-purple-100 text-white font-bold py-2 px-4 rounded"
         >
           Pulse
         </button>
         <button
-          class="animate-bounce bg-purple-500 hover:bg-purple-100 text-white font-bold py-2 px-4 rounded"
+          class="... bg-purple-500 hover:bg-purple-100 text-white font-bold py-2 px-4 rounded"
         >
           Bounce
         </button>
         <button
-          class="animate-spin bg-purple-500 hover:bg-purple-100 text-white font-bold py-2 px-4 rounded"
+          class="... bg-purple-500 hover:bg-purple-100 text-white font-bold py-2 px-4 rounded"
         >
           Spin
         </button>
+
         <button
-          class="animate-ping bg-purple-500 hover:bg-purple-100 text-white font-bold py-2 px-4 rounded"
-        >
-          Ping
-        </button>
-        <button
-          class="animate-pulse bg-purple-500 hover:bg-purple-100 text-white font-bold py-2 px-4 rounded"
+          class="bg-purple-500 hover:bg-purple-100 text-white font-bold py-2 px-4 rounded"
         >
           Pulse
-        </button>
-        <button
-          class="animate-bounce bg-purple-500 hover:bg-purple-100 text-white font-bold py-2 px-4 rounded"
-        >
-          Bounce
-        </button>
-        <button
-          class="animate-spin bg-purple-500 hover:bg-purple-100 text-white font-bold py-2 px-4 rounded"
-        >
-          Spin
         </button>
         <button
           class="animate-ping bg-purple-500 hover:bg-purple-100 text-white font-bold py-2 px-4 rounded"
