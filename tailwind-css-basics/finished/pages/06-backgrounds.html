@@ -17,8 +17,8 @@
       <h2>background-attachment</h2>
       <h3>Fixing the background image</h3>
 
-      <!-- TODO: Add "bg-[url('./img/menyhart_media_logo.png')] bg-center bg-no-repeat bg-cover " -->
-      <div class="bg-[url('./img/menyhart_media_logo.png')] bg-fixed">
+      <!-- TODO: Add "bg-[url('./img/menyhart_media_logo.png')] bg-fixed " -->
+      <div class="bg-[url('./img/menyhart_media_logo.png')] ...">
         <p class="bg-white mt-[300px] p-2">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
           quidem minima cumque, rem ipsam corrupti unde quas maiores nobis sunt
@@ -36,9 +36,7 @@
       </div>
       <h3>Scrolling with the container</h3>
       <!-- TODO: Add "bg-[url('./img/menyhart_media_logo.png')] bg-local " -->
-      <div
-        class="bg-[url('./img/menyhart_media_logo.png')] bg-local overflow-y-scroll text-white h-[200px]"
-      >
+      <div class="... overflow-y-scroll text-white h-[200px]">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nihil
         nemo quidem sunt quod consectetur impedit dolor inventore, eius
         temporibus ullam, atque laborum vero illum quas totam sed tenetur?
@@ -75,9 +73,7 @@
       </div>
       <h3>Scrolling with the viewport</h3>
       <!-- TODO: Add "bg-[url('./img/menyhart_media_logo.png')] bg-scroll " -->
-      <div
-        class="bg-[url('./img/menyhart_media_logo.png')] bg-scroll overflow-y-scroll h-[200px] text-white"
-      >
+      <div class="... overflow-y-scroll h-[200px] text-white">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo in
         molestias incidunt, perferendis voluptatum nostrum dolorem vitae
         distinctio non necessitatibus. Consectetur fugit voluptatibus ipsum
@@ -116,33 +112,33 @@
       <!--  TODO: Use the bg-clip-border, bg-clip-padding, and bg-clip-content utilities to control the bounding box of an element's background: -->
 
       <section class="flex gap-16">
-        <div class="bg-clip-border border-4 bg-indigo-500 p-20 size-36"></div>
-        <div class="bg-clip-padding border-4 bg-indigo-500 p-60 size-36"></div>
-        <div class="bg-clip-content border-4 bg-indigo-500 p-1 size-36"></div>
+        <div class="... border-4 bg-indigo-500 p-20 size-36"></div>
+        <div class="... border-4 bg-indigo-500 p-60 size-36"></div>
+        <div class="... border-4 bg-indigo-500 p-1 size-36"></div>
       </section>
 
       <h2>background-color</h2>
       <!-- TODO: Add "bg-red-500,bg-blue-500  bg-cyan-500 bg-pink-500 bg-sky-500/100   bg-sky-500/75 bg-sky-500/50  bg-[#50d71e] bg-indigo-500 hover:bg-fuchsia-500" -->
       <div class="bg-red-500 h-24 w-24"></div>
 
-      <button class="bg-blue-500 ...">Button A</button>
-      <button class="bg-cyan-500 ...">Button B</button>
-      <button class="bg-pink-500 ...">Button C</button>
-      <button class="bg-sky-500/100 ...">500/100</button>
-      <button class="bg-sky-500/75 ...">500/75</button>
-      <button class="bg-sky-500/50 ...">500/50</button>
-      <button class="bg-[#50d71e] ...">bg-[#50d71e]</button>
-      <button class="bg-indigo-500 hover:bg-fuchsia-500 ...">hover me</button>
-      <!--TODO: Adding a linear gradient to an element's background is easy with the ...-->
+      <button class="...">Button A</button>
+      <button class="...">Button B</button>
+      <button class="...">Button C</button>
+      <button class="...">500/100</button>
+      <button class="...">500/75</button>
+      <button class="...">500/50</button>
+      <button class="...">bg-[#50d71e]</button>
+      <button class="...">hover me</button>
+      <!--TODO: Adding a linear gradient to an element's background is easy with the bg-radial-->
       Adding a radial gradient is just as easy:
       <div
-        class="size-18 rounded-full bg-radial from-pink-400 from-40% to-fuchsia-700"
+        class="size-18 rounded-full ... from-pink-400 from-40% to-fuchsia-700"
       ></div>
       <div
-        class="size-18 rounded-full bg-radial-[at_50%_75%] from-sky-200 via-blue-400 to-indigo-900 to-90%"
+        class="size-18 rounded-full ...-[at_50%_75%] from-sky-200 via-blue-400 to-indigo-900 to-90%"
       ></div>
       <div
-        class="size-18 rounded-full bg-radial-[at_25%_25%] from-white to-zinc-900 to-75%"
+        class="size-18 rounded-full ...-[at_25%_25%] from-white to-zinc-900 to-75%"
       ></div>
       <div
         class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-20"
@@ -151,33 +147,15 @@
       <h2>background-image positioning</h2>
       <section class="grid grid-cols-3 grid-rows-3 gap-4 m-auto">
         <!-- TODO: Add  the background positio starting form bg-left-top, bg-top, etc...-->
-        <div
-          class="bg-[url(./img/menyhart_media_logo.png)] size-36 bg-left-top"
-        ></div>
-        <div
-          class="bg-[url(./img/menyhart_media_logo.png)] size-36 bg-top"
-        ></div>
-        <div
-          class="bg-[url(./img/menyhart_media_logo.png)] size-36 bg-right-top"
-        ></div>
-        <div
-          class="bg-[url(./img/menyhart_media_logo.png)] size-36 bg-left"
-        ></div>
-        <div
-          class="bg-[url(./img/menyhart_media_logo.png)] size-36 bg-center"
-        ></div>
-        <div
-          class="bg-[url(./img/menyhart_media_logo.png)] size-36 bg-right"
-        ></div>
-        <div
-          class="bg-[url(./img/menyhart_media_logo.png)] size-36 bg-left-bottom"
-        ></div>
-        <div
-          class="bg-[url(./img/menyhart_media_logo.png)] size-36 bg-bottom"
-        ></div>
-        <div
-          class="bg-[url(./img/menyhart_media_logo.png)] size-36 bg-right-bottom"
-        ></div>
+        <div class="bg-[url(./img/menyhart_media_logo.png)] size-36 ..."></div>
+        <div class="bg-[url(./img/menyhart_media_logo.png)] size-36 ..."></div>
+        <div class="bg-[url(./img/menyhart_media_logo.png)] size-36 ..."></div>
+        <div class="bg-[url(./img/menyhart_media_logo.png)] size-36 ..."></div>
+        <div class="bg-[url(./img/menyhart_media_logo.png)] size-36 ..."></div>
+        <div class="bg-[url(./img/menyhart_media_logo.png)] size-36 ..."></div>
+        <div class="bg-[url(./img/menyhart_media_logo.png)] size-36 ..."></div>
+        <div class="bg-[url(./img/menyhart_media_logo.png)] size-36 ..."></div>
+        <div class="bg-[url(./img/menyhart_media_logo.png)] size-36 ..."></div>
       </section>
     </main>
   </body>
