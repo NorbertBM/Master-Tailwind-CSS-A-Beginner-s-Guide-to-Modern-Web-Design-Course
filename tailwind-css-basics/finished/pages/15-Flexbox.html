@@ -21,14 +21,14 @@
         smaller spaces.
       </p>
       <!-- TODO: flex-->
-      <div class="...">
+      <div class="flex">
         <div class="w-1/2 bg-blue-200 p-4">1/2</div>
         <div class="w-1/2 bg-blue-300 p-4">1/2</div>
       </div>
       <h2>Setting the flex basis</h2>
       <p>Use the basis-* utilities to set the initial size of flex items.</p>
-      <!-- TODO: add flex and flex-row -->
-      <div class="... ...">
+      <!-- TODO: add flex and flex-col -->
+      <div class="flex flex-col">
         <div class="basis-1/4 bg-blue-200 p-4">01</div>
         <div class="basis-1/4 bg-blue-300 p-4">02</div>
         <div class="basis-1/2 bg-blue-300 p-4">03</div>
@@ -38,15 +38,15 @@
         The flex-direction property specifies the direction of the flexible
         items.
       </p>
-      <!-- TODO: Add "flex flex-col " -->
-      <div class="... ... mb-2">
+      <!-- TODO: Add "flex flex-col flex-row" -->
+      <div class="flex flex-col md:flex-row mb-2">
         <div class="w-1/2 bg-blue-200 p-4">1/2</div>
         <div class="w-1/2 bg-blue-300 p-4">1/2</div>
         <div class="w-1/2 bg-blue-200 p-4">1/2</div>
         <div class="w-1/2 bg-blue-300 p-4">1/2</div>
       </div>
       <!-- TODO: Add "flex flex-row " -->
-      <div class="... ...">
+      <div class="flex flex-row lg:flex-col">
         <div class="w-1/2 bg-blue-200 p-4">1/2</div>
         <div class="w-1/2 bg-blue-300 p-4">1/2</div>
 
@@ -61,10 +61,13 @@
       </p>
       <!-- TODO: Add "flex flex-wrap " -->
 
-      <div class="... ... gap-1.5">
+      <div class="flex flex-wrap gap-1.5">
         <div class="w-80 bg-blue-200 p-4">80</div>
         <div class="w-80 bg-blue-300 p-4">80</div>
         <div class="w-80 bg-blue-200 p-4">80</div>
+        <div class="w-80 bg-blue-300 p-4">96</div>
+        <div class="w-80 bg-blue-300 p-4">96</div>
+        <div class="w-80 bg-blue-300 p-4">96</div>
         <div class="w-80 bg-blue-300 p-4">96</div>
       </div>
       <h2>Gap</h2>
@@ -73,7 +76,7 @@
         is a shorthand for the gap-x and gap-y utilities.
       </p>
       <!-- TODO: Add "gap-3 gap-x-3 gap-y-1.5" -->
-      <div class="flex flex-wrap ... ... ...">
+      <div class="flex flex-wrap gap-y-3 gap-x-10 ...">
         <div class="w-80 bg-blue-200 p-4">80</div>
         <div class="w-80 bg-blue-300 p-4">80</div>
         <div class="w-80 bg-blue-200 p-4">80</div>
@@ -91,11 +94,11 @@
       </p>
       <div class="flex gap-3">
         <!-- TODO: Add " flex-none grow flex-none grow-0 grow" -->
-        <div class="... w-14 h-14 bg-blue-200">1/4</div>
-        <div class="... h-14 bg-blue-300">1/4</div>
-        <div class="... w-14 h-14 bg-blue-200">1/4</div>
-        <div class="... w-14 h-14 bg-blue-300">1/4</div>
-        <div class="... w-14 h-14 bg-blue-200">1/4</div>
+        <div class="flex-none w-14 h-14 bg-blue-200">1/4</div>
+        <div class="grow h-14 bg-blue-300">1/4</div>
+        <div class="flex-none w-14 h-14 bg-blue-200">1/4</div>
+        <div class="grow hover:grow-0 w-14 h-14 bg-red-300">1/4</div>
+        <div class="grow-0 w-14 h-14 bg-blue-200">1/4</div>
         <div
           class="grow-0 hover:... transition-all duration-1000 w-14 h-14 bg-blue-200"
         >
@@ -110,9 +113,9 @@
 
       <div class="flex gap-3">
         <!-- TODO: Add " flex-none shrink flex-none shrink-0 shrink" -->
-        <div class="... w-64 h-14 bg-blue-200">1/4</div>
-        <div class="... w-64 h-14 bg-blue-300">1/4</div>
-        <div class="... w-60 h-14 bg-blue-200">1/4</div>
+        <div class="shrink w-64 h-14 bg-blue-200">1/4</div>
+        <div class="shrink-0 w-64 h-14 bg-blue-300">1/4</div>
+        <div class="flex-none w-60 h-14 bg-blue-200">1/4</div>
         <div class="... w-14 h-14 bg-blue-300">1/4</div>
         <div class="... w-14 h-14 bg-blue-200">1/4</div>
         <!-- TODO: Add " shrink-0 hover:shrink" -->
