@@ -1,308 +1,31 @@
 <!DOCTYPE html>
-<!-- TODO: Add  "scroll-smooth"-->
-<html lang="en" class="scroll-smooth">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./output.css" />
     <title>Document</title>
   </head>
-  <!-- TODO: Install Tailwind CSS using -->
-  <!-- <body class="flex flex-col items-center justify-center h-screen">
+  <body class="flex flex-col items-center justify-center h-screen">
     <h1 class="text-red-400 text-4xl mb-36">Projects</h1>
     <header>
-      <nav
-        class="flex flex-col gap-4 items-center sticky top-0 bg-slate-500 p-4"
-      >
+      <nav>
         <a
-          href="./todolist/index.html"
-          class="text-blue-500 hover:bg-slate-600 hover:rounded-lg transition-all ease-in-out duration-300 px-2 py-1 hover:text-red-400"
+          href=""
+          class="text-blue-500 hover:bg-slate-700 hover:rounded-lg transition-all ease-in-out duration-300 px-2 py-1 hover:text-red-400"
           >Todo List</a
         >
         <a
-          href="./calculator/index.html"
-          class="text-blue-500 hover:bg-slate-600 hover:rounded-lg transition-all ease-in-out duration-300 px-2 py-1 hover:text-red-400"
+          href=""
+          class="text-blue-500 hover:bg-slate-700 hover:rounded-lg transition-all ease-in-out duration-300 px-2 py-1 hover:text-red-400"
           >Calculator</a
         >
         <a
-          href="./weather/index.html"
-          class="text-blue-500 hover:bg-slate-600 hover:rounded-lg transition-all ease-in-out duration-300 px-2 py-1 hover:text-red-400"
-          >Weather</a
+          href=""
+          class="text-blue-500 hover:bg-slate-700 hover:rounded-lg transition-all ease-in-out duration-300 px-2 py-1 hover:text-red-400"
+          >Bookings</a
         >
       </nav>
     </header>
-  </body> -->
-
-  <body
-    class="relative bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100"
-  >
-    <header class="bg-white shadow sticky top-0 z-50 dark:bg-gray-800">
-      <div class="container mx-auto px-6 py-3">
-        <div class="flex items-center justify-between">
-          <div class="text-xl font-bold text-gray-900 dark:text-white">
-            My Portfolio
-          </div>
-          <nav class="flex space-x-4">
-            <a
-              href="#about"
-              class="text-gray-600 hover:text-gray-950 dark:text-gray-500 dark:hover:text-gray-100"
-              >About</a
-            >
-            <a
-              href="#projects"
-              class="text-gray-600 hover:text-gray-950 dark:text-gray-500 dark:hover:text-gray-100"
-              >Projects</a
-            >
-            <a
-              href="#contact"
-              class="text-gray-600 hover:text-gray-950 dark:text-gray-500 dark:hover:text-gray-100"
-              >Contact</a
-            >
-          </nav>
-          <button
-            id="dark-mode-toggle"
-            class="ml-4 px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-700 dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-gray-300"
-          >
-            Toggle Dark Mode
-          </button>
-        </div>
-      </div>
-    </header>
-
-    <main class="container mx-auto px-6 py-12">
-      <!-- TODO: Create about section -->
-      <section id="about" class="flex flex-col justify-center h-dvh">
-        <div
-          class="flex flex-col md:flex-row items-center justify-between gap-6"
-        >
-          <div class="flex flex-col">
-            <h2 class="text-3xl font-bold mb-4">About Me</h2>
-            <p
-              class="text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-700 mb-2 p-2 rounded-lg shadow-lg w-fit"
-            >
-              I am a web developer with a passion for creating beautiful and
-              functional websites.
-            </p>
-            <p
-              class="text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-700 mb-2 p-2 rounded-lg shadow-lg w-fit"
-            >
-              I have experience with
-              <span class="text-orange-500 font-semibold">HTML</span>,
-              <span class="text-blue-500 font-semibold">CSS</span>,
-              <span
-                class="text-yellow-500 font-semibold p-1 bg-slate-600 rounded-lg"
-                >JS</span
-              >
-              , and various frameworks and libraries.
-            </p>
-          </div>
-          <div>
-            <img
-              class="rounded-full"
-              src="../public/img/profile.jpg"
-              alt="profile"
-            />
-          </div>
-        </div>
-      </section>
-      <!--TODO: Create  PROJECTS section -->
-      <section id="projects" class="flex flex-col justify-center h-dvh">
-        <h2 class="text-3xl font-bold mb-4">Projects</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <a
-            class="grid grid-rows-4 grid-cols-2 gap-x-4 bg-white p-6 rounded-lg shadow-lg dark:bg-gray-800 cursor-pointer hover:scale-105 transition-all ease-in-out duration-300"
-            href="./calculator/index.html"
-          >
-            <h3 class="row-span-1 col-span-2 text-xl font-bold">
-              Tailwind CSS Mini Calculator
-            </h3>
-            <p
-              class="row-span-3 text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-200"
-            >
-              Create a simple yet stylish calculator using Tailwind CSS. This
-              project is perfect for beginners who want to learn how to use
-              Tailwind CSS to style their web applications.
-            </p>
-            <img
-              class="row-span-3 rounded-lg"
-              src="../public/img/calculator.png"
-              alt="calculator"
-            />
-          </a>
-          <a
-            class="grid grid-rows-4 grid-cols-2 gap-x-4 bg-white p-6 rounded-lg shadow-lg dark:bg-gray-800 cursor-pointer hover:scale-105 transition-all ease-in-out duration-300"
-            href="./todolist/index.html"
-          >
-            <h3 class="row-span-1 col-span-2 text-xl font-bold">
-              Tailwind CSS Changeable Todo List
-            </h3>
-            <p
-              class="row-span-3 text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-200"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-              officiis nobis?
-            </p>
-            <img
-              class="row-span-3 rounded-lg"
-              src="../public/img/todo.png"
-              alt="todo"
-            />
-          </a>
-          <a
-            class="grid grid-rows-4 grid-cols-2 gap-x-4 bg-white p-6 rounded-lg shadow-lg dark:bg-gray-800 cursor-pointer hover:scale-105 transition-all ease-in-out duration-300"
-            href="./bookings/index.html"
-          >
-            <h3 class="row-span-1 col-span-2 text-xl font-bold">
-              Tailwind CSS Bookings website
-            </h3>
-            <p
-              class="row-span-3 text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-200"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-              officiis nobis?
-            </p>
-            <img
-              class="row-span-3 rounded-lg"
-              src="../public/img/bookings.png"
-              alt="todo"
-            />
-          </a>
-        </div>
-      </section>
-      <!--TODO: Create  CONTACT section -->
-      <section id="contact" class="flex flex-col justify-center h-dvh">
-        <h2 class="text-3xl font-bold mb-4">Contact</h2>
-
-        <div class="flex flex-col md:flex-row justify-between gap-6">
-          <div class="contact-info">
-            <p class="text-gray-700 dark:text-gray-300">
-              <strong>Address:</strong> 123 Main Street, Anytown, USA
-            </p>
-            <p class="text-gray-700 dark:text-gray-300">
-              <strong>Phone:</strong> (123) 456-7890
-            </p>
-            <p class="text-gray-700 dark:text-gray-300">
-              <strong>Email:</strong> example@example.com
-            </p>
-            <div class="flex mb-4">
-              <strong> Social:</strong>
-              <div class="flex ml-4 space-x-4">
-                <a
-                  href="https://x.com"
-                  target="_blank"
-                  class="hover:text-blue-700"
-                >
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path
-                      d="M23.954 4.569c-.885.392-1.83.656-2.825.775 1.014-.608 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.897-.959-2.178-1.555-3.594-1.555-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124-4.087-.205-7.719-2.165-10.148-5.144-.422.722-.666 1.561-.666 2.457 0 1.69.86 3.179 2.169 4.054-.798-.026-1.55-.245-2.205-.616v.061c0 2.362 1.679 4.337 3.918 4.778-.409.111-.84.171-1.285.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 14.01-7.496 14.01-13.986 0-.213-.005-.425-.014-.636.961-.695 1.8-1.562 2.46-2.549z"
-                    />
-                  </svg>
-                </a>
-                <a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  class="hover:text-blue-900"
-                >
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path
-                      d="M19.998 3H4.002C3.448 3 3 3.448 3 4.002v15.996C3 20.552 3.448 21 4.002 21h15.996C20.552 21 21 20.552 21 19.998V4.002C21 3.448 20.552 3 19.998 3zM8.337 18.338H5.671V9.671h2.666v8.667zM7.004 8.338c-.86 0-1.558-.698-1.558-1.558 0-.86.698-1.558 1.558-1.558.86 0 1.558.698 1.558 1.558 0 .86-.698 1.558-1.558 1.558zM18.338 18.338h-2.666v-4.667c0-1.11-.022-2.537-1.548-2.537-1.548 0-1.785 1.21-1.785 2.457v4.747h-2.666V9.671h2.558v1.185h.037c.356-.675 1.226-1.387 2.522-1.387 2.696 0 3.195 1.775 3.195 4.083v4.786z"
-                    />
-                  </svg>
-                </a>
-                <a
-                  href="https://github.com"
-                  target="_blank"
-                  class="hover:text-gray-700 dark:text-gray-100 dark:hover:text-gray-300"
-                >
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path
-                      d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.34-3.369-1.34-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.607.069-.607 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.682-.103-.253-.446-1.27.098-2.646 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.91-1.294 2.75-1.025 2.75-1.025.545 1.376.202 2.393.1 2.646.64.698 1.028 1.591 1.028 2.682 0 3.842-2.337 4.687-4.565 4.936.36.31.68.92.68 1.855 0 1.338-.012 2.418-.012 2.746 0 .268.18.58.688.482A10.013 10.013 0 0022 12c0-5.523-4.477-10-10-10z"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <form
-            id="contact-form"
-            class="bg-white grow p-6 rounded-lg shadow-lg dark:bg-gray-800"
-          >
-            <div class="mb-4">
-              <label for="name" class="block text-gray-700 dark:text-gray-300"
-                >Name</label
-              >
-              <input
-                type="text"
-                id="name"
-                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-gray-300"
-              />
-            </div>
-            <div class="mb-4">
-              <label for="email" class="block text-gray-700 dark:text-gray-300"
-                >Email</label
-              >
-              <input
-                type="email"
-                id="email"
-                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-gray-300"
-              />
-            </div>
-            <div class="mb-4">
-              <label
-                for="message"
-                class="block text-gray-700 dark:text-gray-300"
-                >Message</label
-              >
-              <textarea
-                id="message"
-                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-gray-300"
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-500"
-            >
-              Send
-            </button>
-          </form>
-        </div>
-      </section>
-    </main>
-    <!-- TODO: Create Go to top button  -->
-    <a
-      href="#about"
-      class="bg-gray-900 text-white rounded-full hover:bg-gray-700 dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-gray-300 p-3 hover:p-4 transition-all font-bold absolute bottom-20 right-10"
-    >
-      Top
-    </a>
-
-    <footer class="bg-white shadow mt-12 dark:bg-gray-800">
-      <div class="container mx-auto px-6 py-3 text-center">
-        <p class="text-gray-700 dark:text-gray-300">
-          &copy; 2025 My Portfolio. All rights reserved.
-        </p>
-      </div>
-    </footer>
-
-    <script>
-      document
-        .getElementById("contact-form")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
-          alert("Form submitted!");
-        });
-
-      document
-        .getElementById("dark-mode-toggle")
-        .addEventListener("click", function () {
-          document.documentElement.classList.toggle("dark");
-          if (this.innerText === "Toggle Dark Mode") {
-            this.innerText = "Toggle Light Mode";
-          } else {
-            this.innerText = "Toggle Dark Mode";
-          }
-        });
-    </script>
   </body>
 </html>
