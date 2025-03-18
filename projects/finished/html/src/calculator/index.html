@@ -6,40 +6,38 @@
     <link href="../output.css" rel="stylesheet" />
     <title>Calculator</title>
   </head>
+  <!-- TODO:  Create the calculator pad using HTML and Tailwind Classes-->
   <body class="bg-gray-100 flex items-center justify-center h-screen">
+    <!-- TODO: Create Calculator body and Display -->
     <div class="bg-slate-600 p-6 rounded-lg shadow-lg">
       <input
-        type="text"
         id="display"
-        class="w-full h-[80px] text-right mb-4 pr-2 text-3xl bg-slate-900 text-white border border-green-500 rounded"
         value="0"
         readonly
+        class="w-full h-[80px] text-right mb-4 pr-2 text-3xl bg-slate-900 text-white border border-green-500 rounded"
       />
+      <!-- TODO: Create Calculator buttons -->
       <div class="grid grid-cols-4 gap-4">
-        <button class="bg-gray-200" onclick="appendNumber('7')">7</button>
-        <button class="bg-gray-200" onclick="appendNumber('8')">8</button>
-        <button class="bg-gray-200" onclick="appendNumber('9')">9</button>
-        <button class="bg-yellow-500 text-white" onclick="setOperation('/')">
-          /
-        </button>
-        <button class="bg-gray-200" onclick="appendNumber('4')">4</button>
-        <button class="bg-gray-200" onclick="appendNumber('5')">5</button>
-        <button class="bg-gray-200" onclick="appendNumber('6')">6</button>
-        <button class="bg-yellow-500 text-white" onclick="setOperation('*')">
-          *
-        </button>
-        <button class="bg-gray-200" onclick="appendNumber('1')">1</button>
-        <button class="bg-gray-200" onclick="appendNumber('2')">2</button>
-        <button class="bg-gray-200" onclick="appendNumber('3')">3</button>
-        <button class="bg-yellow-500 text-white" onclick="setOperation('-')">
-          -
-        </button>
-        <button class="bg-gray-200" onclick="appendNumber('0')">0</button>
-        <button class="bg-gray-200" onclick="appendNumber('.')">.</button>
-        <button class="bg-red-500 text-white" onclick="clearDisplay()">
-          C
-        </button>
-        <button class="bg-yellow-500 text-white" onclick="setOperation('+')">
+        <button class="bg-gray-200" onclick="appendNumber('7')">7</button
+        ><button class="bg-gray-200" onclick="appendNumber('8')">8</button
+        ><button class="bg-gray-200" onclick="appendNumber('9')">9</button
+        ><button class="bg-yellow-500 text-white" onclick="setOperation('/')">
+          /</button
+        ><button class="bg-gray-200" onclick="appendNumber('4')">4</button
+        ><button class="bg-gray-200" onclick="appendNumber('5')">5</button
+        ><button class="bg-gray-200" onclick="appendNumber('6')">6</button
+        ><button class="bg-yellow-500 text-white" onclick="setOperation('*')">
+          *</button
+        ><button class="bg-gray-200" onclick="appendNumber('1')">1</button
+        ><button class="bg-gray-200" onclick="appendNumber('2')">2</button
+        ><button class="bg-gray-200" onclick="appendNumber('3')">3</button
+        ><button class="bg-yellow-500 text-white" onclick="setOperation('-')">
+          -</button
+        ><button class="bg-gray-200" onclick="appendNumber('0')">0</button
+        ><button class="bg-gray-200" onclick="appendNumber('.')">.</button
+        ><button class="bg-red-500 text-white" onclick="clearDisplay()">
+          C</button
+        ><button class="bg-yellow-500 text-white" onclick="setOperation('+')">
           +
         </button>
         <button
@@ -51,17 +49,28 @@
       </div>
     </div>
 
+    <!-- Script -->
     <script>
       let display = document.getElementById("display");
       let currentOperation = null;
       let firstOperand = null;
       const buttons = document.querySelectorAll("button");
 
-      display.value === "0" && display.classList.add("animate-pulse");
+      if (display.value === "0") {
+        display.classList.add("animate-pulse");
+      }
 
-      // TODO: add same classes to all bottons
+      // TODO: Add same classes to all buttons
+
       buttons.forEach((button) => {
-        button.classList.add("p-4", "text-2xl", "rounded", "shadow-xl");
+        button.classList.add(
+          "p-4",
+          "text-2xl",
+          "rounded",
+          "shadow-xl",
+          "transition",
+          "durations-300"
+        );
         if (button.classList.contains("bg-red-500")) {
           button.classList.add("hover:bg-red-400");
         } else if (button.classList.contains("bg-yellow-500")) {
@@ -72,10 +81,10 @@
           button.classList.add("hover:bg-slate-300");
         }
       });
-
       // TODO: Add click effect to buttons
 
-      function addClickEffectToButtons() {
+      (function addClickEffectToButtons() {
+        // console.log("click effect");
         buttons.forEach((button) => {
           button.addEventListener("click", () => {
             button.classList.add("scale-50", "shadow-none", "duration-700");
@@ -85,12 +94,12 @@
                 "shadow-none",
                 "duration-700"
               );
-            }, 100);
+            }, 150);
           });
         });
-      }
-      addClickEffectToButtons();
+      })();
 
+      // Ready script
       function appendNumber(number) {
         if (display.value === "0") {
           display.value = number;
