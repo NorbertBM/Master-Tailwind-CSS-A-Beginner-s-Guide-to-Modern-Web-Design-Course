@@ -6,31 +6,28 @@
     <link href="../output.css" rel="stylesheet" />
     <title>Todo List with Tailwind CSS</title>
   </head>
-  <body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
-    <div class="w-full max-w-md bg-white shadow-md rounded-lg p-6">
+  <!-- TODO: Create the  Container, Input and Add button-->
+  <body class="flex justify-center items-center min-h-screen bg-gray-100 p-4">
+    <main class="w-full max-w-md bg-white shadow-md rounded-lg p-6">
       <h1 class="text-2xl font-bold text-center mb-4">Todo List</h1>
-
-      <!-- Add New Task -->
       <div class="mb-4 flex items-center gap-2">
         <input
-          id="new-task-input"
           type="text"
-          placeholder="Add a new task..."
-          class="flex-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          id="new-task-input"
+          class="flex-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
         />
         <button
           id="add-task-button"
-          class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+          class="bg-blue-400 text-white px-4 py-2 rounded-md hover:bg-blue-500 transition-all"
         >
           Add
         </button>
       </div>
-
-      <!-- Todo List -->
+      <!--TODO: Create the Todo List using Tailwind in JavaScript -->
       <ul id="todo-list" class="space-y-2">
         <!-- Dynamic list items will be rendered here -->
       </ul>
-    </div>
+    </main>
 
     <script>
       // State: Array to hold todo items
@@ -46,23 +43,21 @@
         todoList.innerHTML = ""; // Clear the current list
 
         todos.forEach((todo, index) => {
-          // Create a new list item
+          //TODO: Create a new list item
           const li = document.createElement("li");
           li.className =
-            "flex items-center justify-between bg-gray-100 p-3 rounded-md shadow-sm";
-
+            "flex items-center justify-between bg-gray-100 rounded-md shadow-sm p-3";
+          // TODO: Create the list item content inkl. Actions
           li.innerHTML = `
-          <div class="flex items-center gap-2">
-            <span class="font-bold text-gray-500">${index + 1}.</span>
-            <span>${todo.text}</span>
-          </div>
-          <div class="flex items-center gap-2">
-            <button class="move-up bg-green-500 text-white px-2 py-1 rounded-md hover:bg-green-600">↑</button>
-            <button class="move-down bg-blue-500 text-white px-2 py-1 rounded-md hover:bg-blue-600">↓</button>
-            <button class="delete bg-red-500 text-white px-2 py-1 rounded-md hover:bg-red-600">✕</button>
-          </div>
-        `;
-
+      <div class="flex items-center gap-2">
+        <span class="font-bold text-gray-500">${index + 1}</span>
+        <span > ${todo.text}</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <button class="move-up bg-green-500 text-white px-2 py-1 rounded-md hover:bg-green-600">↑</button>
+        <button class="move-down bg-blue-500 text-white px-2 py-1 rounded-md hover:bg-blue-600">↓</button>
+        <button class="delete bg-red-500 text-white px-2 py-1 rounded-md hover:bg-red-600">✕</button>
+      </div>`;
           // Add event listeners for buttons
           li.querySelector(".move-up").addEventListener("click", () =>
             moveUp(index)
