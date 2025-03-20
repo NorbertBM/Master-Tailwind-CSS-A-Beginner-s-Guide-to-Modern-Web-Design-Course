@@ -49,20 +49,20 @@
         <div class="w-1/2 bg-orange-300">hidden</div>
       </div>
       <!--TODO: Add " flex items-center justify-center" -->
-      <div class="... mt-6 rounded-md bg-gray-200 py-3">
+      <div class="flex items-center justify-center rounded-md bg-gray-200 py-3">
         <img
           src="./img/menyhart_media_logo.png"
           class="size-16 rounded-full mr-4"
         />
         <!--TODO: Add "flex flex-col" -->
-        <div class="...">
+        <div class="flex flex-col">
           <strong>Menyhart Media</strong>
           <span>Empowering learning</span>
         </div>
       </div>
       <h3>Display grid</h3>
       <!--TODO: Add "grid grid-cols-3 grid-rows-3 gap-4" -->
-      <div class="...">
+      <div class="grid grid-cols-3 grid-rows-3 gap-4">
         <div class="bg-pink-500 size-16 rounded-2xl"></div>
         <div class="bg-pink-500 size-16 rounded-2xl"></div>
         <div class="bg-pink-500 size-16 rounded-2xl"></div>
@@ -76,7 +76,7 @@
       <h3>Display flex</h3>
 
       <!--TODO: Add "flex flex-col space-y-4 md:flex-row md:space-x-4" -->
-      <div class="...">
+      <div class="flex flex-col space-y-4 md:flex-row md:space-x-4">
         <div class="bg-sky-500 size-16 rounded-2xl"></div>
         <div class="bg-sky-500 size-16 rounded-2xl"></div>
         <div class="bg-sky-500 size-16 rounded-2xl"></div>
@@ -104,7 +104,7 @@
           <p class="text-xl font-bold">Static parent</p>
           <!-- TODO: Add "static" -->
           <button
-            class="... bottom-0 left-2 text-purple-100 bg-purple-600 border-1 p-2 rounded-md hover:bg-purple-800"
+            class="static bottom-0 left-2 text-purple-100 bg-purple-600 border-1 p-2 rounded-md hover:bg-purple-800"
           >
             Static child
           </button>
@@ -123,7 +123,7 @@
           <p class="text-xl font-bold">Relative parent</p>
           <!-- TODO: Add "relative" -->
           <button
-            class="... bottom-1 left-2 text-green-100 bg-green-600 border-1 p-2 rounded-md hover:bg-green-800"
+            class="relative bottom-16 left-20 text-green-100 bg-green-600 border-1 p-2 rounded-md hover:bg-green-800"
           >
             Relative position
           </button>
@@ -139,11 +139,11 @@
           </p>
         </div>
         <!-- TODO: Add "relative" to parent  and ..."-->
-        <div class="... w-1/2 bg-yellow-300 p-1">
+        <div class="relative w-1/2 bg-yellow-300 p-1">
           <p class="text-xl font-bold">Absolute parent</p>
           <!-- TODO: Add ...  and "absolute" to child-->
           <button
-            class="... bottom-5 left-[200px] text-yellow-100 bg-yellow-600 border-1 p-2 rounded-md hover:bg-yellow-800"
+            class="absolute bottom-16 left-[300px] text-yellow-100 bg-yellow-600 border-1 p-2 rounded-md hover:bg-yellow-800"
           >
             Absolute child
           </button>
@@ -163,7 +163,7 @@
           <p class="text-xl font-bold">Fixed position</p>
           <!-- TODO: Add "fixed to the child element " -->
           <button
-            class="... w-2xs top-3 right-3 text-red-100 bg-red-600 border-1 p-2 rounded-md hover:bg-red-800"
+            class="fixed w-2xs top-32 right-32 text-red-100 bg-red-600 border-1 p-2 rounded-md hover:bg-red-800"
           >
             Fixed element
           </button>
@@ -183,7 +183,7 @@
           class="w-1/2 bg-orange-300 p-1 h-[100px] overflow-y-scroll flex flex-col"
         >
           <!-- TODO: Add "sticky and top-0" to the p tag -->
-          <p class="... text-xl font-bold">Sticky position</p>
+          <p class="sticky top-0 text-xl font-bold">Sticky position</p>
           <button
             class="text-orange-100 bg-orange-600 border-1 p-2 rounded-md hover:bg-orange-800"
           >
