@@ -18,21 +18,199 @@
     </style>
   </head>
   <!-- TODO: Project Setup and page structure -->
-  <body class="">
+  <body class="bg-gray-100">
     <!--TODO:  Page Header with responsive navigation-->
-    <header class=""></header>
-    <main class="">
+    <header class="bg-blue-600 text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">BookingSite</h1>
+        <nav class="hidden md:flex">
+          <a
+            href="#"
+            class="px-4 py-2 hover:bg-white hover:text-blue-600 w-20 rounded-md transition-all duration-300 ease-in-out"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="px-4 py-2 hover:bg-white hover:text-blue-600 w-20 rounded-md transition-all duration-300 ease-in-out"
+            >About</a
+          >
+          <a
+            href="#"
+            class="px-4 py-2 hover:bg-white hover:text-blue-600 w-20 rounded-md transition-all duration-300 ease-in-out"
+            >Contact</a
+          >
+        </nav>
+        <button
+          id="hamburger-button"
+          class="md:hidden text-white focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <nav id="mobile-menu" class="md:hidden bg-blue-600 text-white p-4 hidden">
+        <a href="#" class="block py-2">Home</a>
+        <a href="#" class="block py-2">About</a>
+        <a href="#" class="block py-2">Contact</a>
+      </nav>
+    </header>
+    <main class="container max-w-screen-xl mx-auto mt-10">
       <!-- TODO: Create Hero Section -->
-      <section class=" "></section>
+      <section class="text-center">
+        <h2 class="text-4xl font-bold mb-4">Book Your Dream Vacation</h2>
+        <p class="text-lg mb-8">
+          Find the best deals on hotels, flights, and rental cars.
+        </p>
+        <button
+          class="bg-blue-600 hover:bg-blue-400 text-white px-6 py-2 rounded transition-all duration-300 ease-in-out"
+        >
+          Get Started
+        </button>
+      </section>
       <!-- TODO: Create Image Carousel -->
-      <section class=""></section>
+      <section class="mt-10">
+        <div class="relative">
+          <div class="carousel">
+            <div
+              class="carousel-item bg-fixed bg-no-repeat bg-center bg-cover bg-white text-white h-64 p-6 rounded-lg shadow-lg"
+              style="background-image: url(../../public/img/hotel.jpg)"
+            >
+              <h3 class="text-2xl font-bold mb-2">Hotel</h3>
+              <p class="mb-4">Find the best deals on hotels worldwide.</p>
+              <button
+                class="bg-blue-600 hover:bg-blue-400 text-white px-4 py-2 rounded transition-all duration-300 ease-in-out"
+              >
+                Search Hotels
+              </button>
+            </div>
+            <div
+              class="carousel-item bg-fixed bg-no-repeat bg-center bg-cover bg-white text-white h-64 p-6 rounded-lg shadow-lg"
+              style="background-image: url(../../public/img/airplane.jpg)"
+            >
+              <h3 class="text-2xl font-bold mb-2">Flights</h3>
+              <p class="mb-4">Book flights to your favorite destinations.</p>
+              <button
+                class="bg-blue-600 hover:bg-blue-400 text-white px-4 py-2 rounded transition-all duration-300 ease-in-out"
+              >
+                Search Flights
+              </button>
+            </div>
+            <div
+              class="carousel-item bg-fixed bg-no-repeat bg-center bg-cover bg-white text-white h-64 p-6 rounded-lg shadow-lg"
+              style="background-image: url(../../public/img/car.jpg)"
+            >
+              <h3 class="text-2xl font-bold mb-2">Rental Cars</h3>
+              <p class="mb-4">Find the best deals on rental cars.</p>
+              <button
+                class="bg-blue-600 hover:bg-blue-400 text-white px-4 py-2 rounded transition-all duration-300 ease-in-out"
+              >
+                Search Cars
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- TODO: Create testimonial section -->
-      <section class=""></section>
+      <section class="mt-10">
+        <h2 class="text-center text-3xl font-bold mb-6">Testimonials</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <p class="mb-4">
+              "BookingSite made planning my vacation so easy and stress-free!"
+            </p>
+            <div class="flex items-center mb-4">
+              <img
+                src="../../public/img/Jane Doe.jpg"
+                class="size-16 rounded-full"
+                alt="Jane Doe"
+              />
+              <p class="font-bold">- Jane Doe</p>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <p class="mb-4">
+              "BookingSite made planning my vacation so easy and stress-free!"
+            </p>
+            <div class="flex items-center mb-4">
+              <img
+                src="../../public/img/Jane Doe.jpg"
+                class="size-16 rounded-full"
+                alt="Jane Doe"
+              />
+              <p class="font-bold">- Jane Doe</p>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <p class="mb-4">
+              "BookingSite made planning my vacation so easy and stress-free!"
+            </p>
+            <div class="flex items-center mb-4">
+              <img
+                src="../../public/img/Jane Doe.jpg"
+                class="size-16 rounded-full"
+                alt="Jane Doe"
+              />
+              <p class="font-bold">- Jane Doe</p>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <p class="mb-4">
+              "BookingSite made planning my vacation so easy and stress-free!"
+            </p>
+            <div class="flex items-center mb-4">
+              <img
+                src="../../public/img/Jane Doe.jpg"
+                class="size-16 rounded-full"
+                alt="Jane Doe"
+              />
+              <p class="font-bold">- Jane Doe</p>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- TODO: Create Newsletter subscription form -->
-      <section class=""></section>
+      <section class="mt-10 mb-60 text-center">
+        <h2 class="text-3xl font-bold mb-4">Subscribe to our Newsletter</h2>
+        <p class="text-lg mb-8">
+          Stay updated with the latest deals and offers.
+        </p>
+        <form class="flex gap-2 max-w-md mx-auto">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:outline-blue-600"
+          />
+          <button
+            type="submit"
+            class="bg-blue-600 hover:bg-blue-400 px-6 py-2 rounded text-white transition-all"
+          >
+            Subscribe
+          </button>
+        </form>
+      </section>
     </main>
     <!-- TODO: Create  Website Footer  -->
-    <footer class=""></footer>
+    <footer class="bg-gray-800 text-white fixed bottom-0 w-full p-4">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2025 BookingSite. All rights reserved.</p>
+        <div class="mt-4">
+          <a href="#" class="px-2 hover:text-gray-400">Privacy Policy</a
+          ><a href="#" class="px-2 hover:text-gray-400">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
     <!-- Logic -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
