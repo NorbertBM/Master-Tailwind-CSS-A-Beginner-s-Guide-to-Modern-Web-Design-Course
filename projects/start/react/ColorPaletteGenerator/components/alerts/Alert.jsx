@@ -1,5 +1,4 @@
 import React from "react";
-
 export default function Alert({ type, bgColor, textColor, message }) {
   return (
     <div

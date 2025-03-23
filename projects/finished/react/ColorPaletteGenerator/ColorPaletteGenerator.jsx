@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
-import ColorPalette from "./components/ColorPalette";
 import { colorMap } from "./db/colorMap";
 import {
   PrimeBtnShow,
@@ -13,7 +12,6 @@ import {
 } from "./components/buttons/PrimeBtn";
 import Alert from "./components/alerts/Alert";
 import Card from "./components/Card";
-// import colorMap from "./db/colorMap.json";
 
 const ColorPaletteGenerator = () => {
   const [baseColor, setBaseColor] = useState("blue");
@@ -116,14 +114,6 @@ const ColorPaletteGenerator = () => {
                       </span>
                     </div>
                   </div>
-                  // <ColorPalette
-                  //   key={shade}
-                  //   bgColorClass={bgColorClass}
-                  //   textColorClass={textColorClass}
-                  //   colorLabel={colorLabel}
-                  //   selectedColor={selectedColor}
-                  //   copyToClipboard={copyToClipboard}
-                  // />
                 );
               })}
             </div>

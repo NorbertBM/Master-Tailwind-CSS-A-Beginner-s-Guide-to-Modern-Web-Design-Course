@@ -1,9 +1,17 @@
 import React from "react";
 // import { colorMap } from "../db/colorMap.js";
-export default function Card({ bgColor, textColor, children, cardTitle }) {
+export default function Card({
+  bgColor,
+  textColor,
+  darkMode,
+  children,
+  cardTitle,
+}) {
   return (
     <div
-      className={`rounded-lg overflow-hidden shadow-md  bg-white dark:bg-gray-700 dark:text-white 
+      className={`rounded-lg overflow-hidden shadow-md  ${
+        darkMode !== undefined && darkMode ? "bg-gray-700" : "bg-white"
+      } dark:bg-gray-700 dark:text-white 
       `}
     >
       <div className={`bg-${bgColor} h-24`}></div>
