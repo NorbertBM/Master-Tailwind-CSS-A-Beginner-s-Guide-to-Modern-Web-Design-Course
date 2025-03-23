@@ -1,12 +1,282 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./output.css" />
-    <title>Document</title>
+    <title>My Portfolio</title>
   </head>
-  <body class="flex flex-col items-center justify-center h-screen">
+  <!-- TODO: General Setup & Project outline -->
+  <body
+    class="relative bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white"
+  >
+    <!-- TODO: Create Header Section with Navigation -->
+    <header class="bg-white shadow sticky top-0 z-50 dark:bg-gray-800">
+      <div class="container mx-auto px-6 py-3">
+        <div class="flex items-center justify-between">
+          <div class="text-xl font-bold text-gray-900 dark:text-white">
+            My Portfolio
+          </div>
+          <nav class="flex space-x-4">
+            <a
+              href="#about"
+              class="text-gray-600 hover:text-gray-950 dark:text-gray-500 dark:hover:text-gray-100"
+              >About</a
+            ><a
+              href="#projects"
+              class="text-gray-600 hover:text-gray-950 dark:text-gray-500 dark:hover:text-gray-100"
+              >Projects</a
+            ><a
+              href="#contact"
+              class="text-gray-600 hover:text-gray-950 dark:text-gray-500 dark:hover:text-gray-100"
+              >Contact</a
+            >
+          </nav>
+          <button
+            id="dark-mode-toggle"
+            class="ml-4 px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-700 dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-gray-300 transition-all"
+          >
+            <i class="fa-solid fa-moon"></i>
+            <!-- dark -->
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="container mx-auto px-6 py-12">
+      <!-- TODO: Create About Section -->
+      <section id="about" class="flex flex-col justify-center h-dvh">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-6"
+        >
+          <div class="flex flex-col">
+            <h2 class="text-3xl font-bold mb-4">About Me</h2>
+            <p
+              class="text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-700 mb-2 p-2 rounded-lg shadow-lg w-fit"
+            >
+              I am a web developer with a passion for creating beautiful and
+              functional websites.
+            </p>
+            <p
+              class="text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-700 mb-2 p-2 rounded-lg shadow-lg w-fit"
+            >
+              I have experience with
+
+              <span class="font-semibold text-orange-500">HTML</span>
+              <span class="font-semibold text-blue-500">CSS</span>
+              <span class="font-semibold text-yellow-500 p-1 bg-black rounded"
+                >JS</span
+              >
+              , and various frameworks and libraries.
+            </p>
+          </div>
+          <div>
+            <img
+              src="../public/img/profile.jpg"
+              alt="profile img"
+              class="rounded-full"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- TODO: Create Projects Section and link your projects -->
+
+      <section id="projects" class="flex flex-col justify-center h-dvh">
+        <h2 class="text-3xl font-bold mb-4">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <a
+            href="./calculator/index.html"
+            class="grid grid-cols-2 grid-rows-4 gap-x-4 bg-white p-6 rounded-lg shadow-lg cursor-pointer dark:bg-gray-800 hover:scale-105 transition-all duration-300 ease-in-out"
+          >
+            <h3 class="row-span-1 col-span-2 text-xl font-bold">
+              Tailwind CSS Mini Calculator
+            </h3>
+            <p
+              class="row-span-3 text-gray-500 dark:text-gray-200 hover:text-gray-700 dark:hover:text-gray-200"
+            >
+              Create a simple yet stylish calculator using Tailwind CSS. This
+              project is perfect for beginners who want to learn how to use
+              Tailwind CSS to style their web applications.
+            </p>
+            <img
+              src="../public/img/calculator.png"
+              alt="calculator"
+              class="row-span-3 rounded-lg"
+            />
+          </a>
+          <a
+            href="./todolist/index.html"
+            class="grid grid-cols-2 grid-rows-4 gap-x-4 bg-white p-6 rounded-lg shadow-lg cursor-pointer dark:bg-gray-800 hover:scale-105 transition-all duration-300 ease-in-out"
+          >
+            <h3 class="row-span-1 col-span-2 text-xl font-bold">
+              Tailwind CSS Mini Calculator
+            </h3>
+            <p
+              class="row-span-3 text-gray-500 dark:text-gray-200 hover:text-gray-700 dark:hover:text-gray-200"
+            >
+              Create a simple yet stylish calculator using Tailwind CSS. This
+              project is perfect for beginners who want to learn how to use
+              Tailwind CSS to style their web applications.
+            </p>
+            <img
+              src="../public/img/todo.png"
+              alt="toto"
+              class="row-span-3 rounded-lg"
+            />
+          </a>
+          <a
+            href="./bookings/index.html"
+            class="grid grid-cols-2 grid-rows-4 gap-x-4 bg-white p-6 rounded-lg shadow-lg cursor-pointer dark:bg-gray-800 hover:scale-105 transition-all duration-300 ease-in-out"
+          >
+            <h3 class="row-span-1 col-span-2 text-xl font-bold">
+              Tailwind CSS Bookings website
+            </h3>
+            <p
+              class="row-span-3 text-gray-500 dark:text-gray-200 hover:text-gray-700 dark:hover:text-gray-200"
+            >
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
+              placeat exercitationem incidunt ut reiciendis ipsa beatae impedit
+              fugit pariatur eum .
+            </p>
+            <img
+              src="../public/img/bookings.png"
+              alt="bookings.png"
+              class="row-span-3 rounded-lg"
+            />
+          </a>
+        </div>
+      </section>
+      <!-- TODO: Create Contact Section with details and Form -->
+      <section id="contact" class="flex flex-col justify-center h-dvh">
+        <h2 class="text-3xl font-bold mb-4">Contact</h2>
+        <div class="flex flex-col md:flex-row justify-between gap-6">
+          <div class="contact-info">
+            <p class="text-gray-7000 dark:text-gray-300">
+              <strong>Address:</strong> 123 Main Street, Anytowen, USA
+            </p>
+            <p class="text-gray-7000 dark:text-gray-300">
+              <strong>Phone:</strong> (123) 323123-3213214
+            </p>
+            <p class="text-gray-7000 dark:text-gray-300">
+              <strong>Email:</strong> example@mail.com
+            </p>
+            <div class="flex mb-4">
+              <strong>Social:</strong>
+              <div class="flex ml-4 space-x-4">
+                <a
+                  href="https://x.com"
+                  target="_blank"
+                  class="hover:text-blue-600"
+                >
+                  <i class="fa-brands fa-square-x-twitter fa-xl"></i>
+                </a>
+                <a
+                  href="https://www.youtube.com/c/MenyhartMedia"
+                  target="_blank"
+                  class="hover:text-blue-600"
+                >
+                  <i class="fa-brands fa-youtube fa-xl"></i>
+                </a>
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  class="hover:text-blue-600"
+                >
+                  <i class="fa-brands fa-github fa-xl"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <form
+            id="contact-form"
+            class="bg-white grow p-6 rounded-lg shadow-lg dark:bg-gray-800"
+          >
+            <div class="mb-4">
+              <label for="text" class="block tex-gray-700 dark:text-gray-300"
+                >Name</label
+              >
+
+              <input
+                type="text"
+                id="name"
+                class="w-full border px-4 py-2 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500 dark:bg-gray-700 dark:text-gray-300"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block tex-gray-700 dark:text-gray-300"
+                >Email</label
+              >
+
+              <input
+                type="email"
+                id="email"
+                class="w-full border px-4 py-2 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500 dark:bg-gray-700 dark:text-gray-300"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block tex-gray-700 dark:text-gray-300"
+                >Message</label
+              >
+
+              <textarea
+                id="message"
+                class="w-full border px-4 py-2 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500 dark:bg-gray-700 dark:text-gray-300"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="py-2 px-4 bg-blue-500 text-white rounded-lg hover:bg-blue-700"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- TODO: Create Footer section and Go to Top Button -->
+    <a
+      href="#about"
+      class="bg-gray-900 text-white rounded-full p-3 absolute bottom-20 right-10 hover:bg-gray-700 dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-gray-300 hover:p-4 transition-all duration-300"
+      >Top</a
+    >
+    <footer class="bg-white shadow mt-12 dark:bg-gray-800">
+      <div class="container mx-auto px-6 py-3 text-center">
+        <p class="text-gray-700 dark:text-gray-300">
+          &copy; 2025 My Portfolio. All rights reserved
+        </p>
+      </div>
+    </footer>
+    <!-- TODO: Create Script for form validation & dark mode -->
+
+    <script>
+      // Dark Mode script
+      document
+        .getElementById("dark-mode-toggle")
+        .addEventListener("click", function () {
+          document.documentElement.classList.toggle("dark");
+          if (this.innerHTML === `<i class="fa-solid fa-sun"></i>`) {
+            this.innerHTML = `<i class="fa-solid fa-moon"></i>`;
+          } else {
+            this.innerHTML = `<i class="fa-solid fa-sun"></i>`;
+          }
+        });
+      // Form submission
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          alert("Form submitted!");
+        });
+    </script>
+  </body>
+</html>
+<!-- <body class="flex flex-col items-center justify-center h-screen">
     <h1 class="text-red-400 text-4xl mb-36">Projects</h1>
     <header>
       <nav>
@@ -18,7 +288,7 @@
         <a
           href=""
           class="text-blue-500 hover:bg-slate-700 hover:rounded-lg transition-all ease-in-out duration-300 px-2 py-1 hover:text-red-400"
-          >Calculator</a
+          >bookings.png</a
         >
         <a
           href=""
@@ -27,5 +297,4 @@
         >
       </nav>
     </header>
-  </body>
-</html>
+  </body> -->

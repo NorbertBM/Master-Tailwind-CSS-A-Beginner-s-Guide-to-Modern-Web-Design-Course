@@ -5,4 +5,6 @@ module.exports = {
   },
 
   plugins: [],
+  // TODO: Add Dark Mode support
+  darkMode: "selector",
 };
