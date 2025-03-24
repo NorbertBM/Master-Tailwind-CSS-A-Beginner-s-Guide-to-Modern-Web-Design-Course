@@ -11,6 +11,10 @@ import {
 import ShowCaseCard from "./components/Cards/ShowCaseCard";
 import ShowCaseAlert from "./components/Alerts/ShowCaseAlert";
 
+// Custom Components import
+import Button from "./components/buttons/Button";
+import Card from "./components/Cards/Card";
+
 const ColorPaletteGenerator = () => {
   const [baseColor, setBaseColor] = useState("blue");
   const [darkMode, setDarkMode] = useState(false);
@@ -144,14 +148,39 @@ const ColorPaletteGenerator = () => {
 
                   <OutlineBtnShow baseColor={baseColor} colorMap={colorMap} />
                 </div>
-
                 <h3 className="text-lg font-medium my-4">
                   Button{" "}
                   <small className="text-xs text-slate-500">
                     component example
                   </small>
                 </h3>
-                {/* TODO: CREATE YOU OWN BUTTON COMPONENT */}
+                {/* TODO: CREATE YOUR OWN BUTTON COMPONENT */}
+                <div className="flex flex-wrap gap-2">
+                  <Button
+                    color={"blue"}
+                    value={300}
+                    onClick={() => alert("Button Click")}
+                    cusClasses="w-full shadow"
+                  >
+                    Start
+                  </Button>
+                  <Button
+                    color={"lime"}
+                    // value={500}
+                    onClick={() => alert("Button Click")}
+                    variant="secondary"
+                    cusClasses="shadow"
+                  >
+                    Pause
+                  </Button>
+                  <Button
+                    color={"amber"}
+                    onClick={() => alert("Button Click")}
+                    variant="outline"
+                  >
+                    Finish
+                  </Button>
+                </div>
               </div>
 
               {/* Card Showcase */}
@@ -170,6 +199,26 @@ const ColorPaletteGenerator = () => {
                   </small>
                 </h3>
                 {/* TODO: Create your own Card Component */}
+                <Card
+                  bgColor="lime-400"
+                  // textColor="lime-600"
+                  textColor="lime"
+                  darkMode={darkMode}
+                  cardTitle={"My custom title"}
+                  cardText={"My custom test gos here and I love my custom text"}
+                ></Card>
+                <Card bgColor="red-400" darkMode={darkMode}>
+                  <div className="p-4">
+                    <h4 className="font-bold mb-2">My Card with children</h4>
+                    <p className="text-sm opacity-80 mb-4">
+                      This is a simple card component styled with Tailwind CSS
+                      utility classes.
+                    </p>
+                    <button className={`text-red-600 text-sm font-medium`}>
+                      Read more...
+                    </button>
+                  </div>
+                </Card>
               </div>
 
               {/* Alert Showcase */}
