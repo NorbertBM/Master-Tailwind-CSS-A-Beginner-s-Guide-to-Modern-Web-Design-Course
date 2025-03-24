@@ -1,17 +1,15 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
+
 import { colorMap } from "./db/colorMap";
 import {
   PrimeBtnShow,
-  PrimeBtn,
   SecBtnShow,
   OutlineBtnShow,
-  SecBtn,
-  OutlineBtn,
-  Button,
-} from "./components/buttons/PrimeBtn";
-import Alert from "./components/alerts/Alert";
-import Card from "./components/Card";
+} from "./components/buttons/Buttons";
+
+import ShowCaseCard from "./components/Cards/ShowCaseCard";
+import ShowCaseAlert from "./components/Alerts/ShowCaseAlert";
 
 const ColorPaletteGenerator = () => {
   const [baseColor, setBaseColor] = useState("blue");
@@ -79,7 +77,7 @@ const ColorPaletteGenerator = () => {
         darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"
       }`}
     >
-      {/* TODO: Create Header component */}
+      {/* TODO:  Header component */}
 
       <Header
         colors={colors}
@@ -136,28 +134,24 @@ const ColorPaletteGenerator = () => {
                 </h3>
                 <div className="flex flex-col gap-3">
                   {/* TODO: Create  */}
+
                   <PrimeBtnShow baseColor={baseColor} colorMap={colorMap} />
                   {/* TODO: Secondary button */}
 
                   <SecBtnShow baseColor={baseColor} colorMap={colorMap} />
+
                   {/* TODO: Create Outline  Showcase Button  */}
+
                   <OutlineBtnShow baseColor={baseColor} colorMap={colorMap} />
                 </div>
-                {/* TODO: Create component */}
-                <h3 className="text-lg font-medium mb-4">
+
+                <h3 className="text-lg font-medium my-4">
                   Button{" "}
                   <small className="text-xs text-slate-500">
                     component example
                   </small>
                 </h3>
-                <PrimeBtn bgColor={"bg-lime-100"} />
-                <SecBtn bgColor={"bg-red-100"} textColor={"text-red-400"} />
-                <OutlineBtn
-                  bgColor={"bg-red-300"}
-                  textColor={"text-red-500"}
-                  borderColor={"border-red-300"}
-                />
-                <Button bgColor={"blue-700"} onClick={() => alert("Click")} />
+                {/* TODO: CREATE YOU OWN BUTTON COMPONENT */}
               </div>
 
               {/* Card Showcase */}
@@ -167,38 +161,15 @@ const ColorPaletteGenerator = () => {
                 }`}
               >
                 <h3 className="text-lg font-medium mb-4">Card</h3>
-                <div
-                  className={`rounded-lg overflow-hidden shadow-md ${
-                    darkMode ? "bg-gray-700" : "bg-white"
-                  }`}
-                >
-                  <div
-                    className={`${colorMap.bg[baseColor]["500"]} h-24`}
-                  ></div>
-                  <div className="p-4">
-                    <h4 className="font-bold mb-2">Card Title</h4>
-                    <p className="text-sm opacity-80 mb-4">
-                      This is a simple card component styled with Tailwind CSS
-                      utility classes.
-                    </p>
-                    <button
-                      className={`${colorMap.text[baseColor]["600"]} text-sm font-medium`}
-                    >
-                      Read more →
-                    </button>
-                  </div>
-                </div>
-                <h3 className="text-lg font-medium mb-4">
-                  Button{" "}
+
+                <ShowCaseCard baseColor={baseColor} darkMode={darkMode} />
+                <h3 className="text-lg font-medium my-4">
+                  Card{" "}
                   <small className="text-xs text-slate-500">
                     component example
                   </small>
                 </h3>
-                <Card
-                  bgColor={"blue-400"}
-                  textColor={"blue-700"}
-                  darkMode={darkMode}
-                />
+                {/* TODO: Create your own Card Component */}
               </div>
 
               {/* Alert Showcase */}
@@ -209,42 +180,14 @@ const ColorPaletteGenerator = () => {
               >
                 <h3 className="text-lg font-medium mb-4">Alerts</h3>
                 <div className="flex flex-col gap-3">
-                  <div
-                    className={`${colorMap.bg[baseColor]["100"]} border-l-4 ${colorMap.border[baseColor]["500"]} ${colorMap.text[baseColor]["700"]} p-4 rounded`}
-                  >
-                    <div className="flex items-center">
-                      <svg
-                        className="w-5 h-5 mr-2"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                      <p className="font-medium">Information alert</p>
-                    </div>
-                  </div>
-                  <div
-                    className={`${colorMap.bg[baseColor]["50"]} border ${colorMap.border[baseColor]["300"]} ${colorMap.text[baseColor]["800"]} p-4 rounded-md`}
-                  >
-                    <p>Simple bordered alert</p>
-                  </div>
+                  <ShowCaseAlert baseColor={baseColor} />
                   <h3 className="text-lg font-medium mb-4">
                     Alert{" "}
                     <small className="text-xs text-slate-500">
                       component example
                     </small>
                   </h3>
-                  <Alert
-                    type="alert"
-                    message="My alert"
-                    bgColor={"violet-100"}
-                    textColor={"violet-700"}
-                  />
+                  {/* TODO: Create you own alert Component */}
                 </div>
               </div>
             </div>
