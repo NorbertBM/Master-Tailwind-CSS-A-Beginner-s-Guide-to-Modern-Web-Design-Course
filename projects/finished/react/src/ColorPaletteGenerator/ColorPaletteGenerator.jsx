@@ -14,6 +14,7 @@ import ShowCaseAlert from "./components/Alerts/ShowCaseAlert";
 // Custom Components import
 import Button from "./components/buttons/Button";
 import Card from "./components/Cards/Card";
+import Alert from "./components/alerts/Alert";
 
 const ColorPaletteGenerator = () => {
   const [baseColor, setBaseColor] = useState("blue");
@@ -237,6 +238,8 @@ const ColorPaletteGenerator = () => {
                     </small>
                   </h3>
                   {/* TODO: Create you own alert Component */}
+                  <Alert type={"info"} color={"red"} />
+                  <Alert type={""} color={"lime"} />
                 </div>
               </div>
             </div>
