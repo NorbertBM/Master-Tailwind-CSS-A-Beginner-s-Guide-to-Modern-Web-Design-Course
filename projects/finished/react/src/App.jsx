@@ -1,11 +1,9 @@
-import ColorPaletteGenerator from "./ColorPaletteGenerator/ColorPaletteGenerator";
+// import ColorPaletteGenerator from "./ColorPaletteGenerator/ColorPaletteGenerator";
+
+import ShopKing from "./ShopKing/ShopKing";
 
 function App() {
-  return (
-    <>
-      <ColorPaletteGenerator />
-    </>
-  );
+  return <ShopKing />;
 }
 
 export default App;
